@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class Carga {
 	
 	public ArrayList<ArrayList<Integer>> cargarMatriz(String nomArchivo) throws NumberFormatException, IOException {
-		BufferedReader lector = new BufferedReader(new FileReader("./datos/" + nomArchivo));
+		BufferedReader lector = new BufferedReader(new FileReader("./docs/" + nomArchivo));
 		String linea;
 		ArrayList<ArrayList<Integer>> matriz = new ArrayList<>();
 		while ((linea = lector.readLine()) != null) {
