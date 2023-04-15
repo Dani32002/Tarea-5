@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Kruskal implements ArbolRecubrimiento{
 
     @Override
-    public ArrayList<int[]> ejesArbol(int[][] matriz) {
+    public ArrayList<ArrayList<Integer>> ejesArbol( ArrayList<ArrayList<Integer>> matriz) {
         return null;
     }
     
