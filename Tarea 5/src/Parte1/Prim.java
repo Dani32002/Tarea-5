@@ -6,7 +6,13 @@ public class Prim implements ArbolRecubrimiento {
 
     @Override
     public ArrayList<ArrayList<Integer>> ejesArbol(ArrayList<ArrayList<Integer>> matriz) {
-        return null;
+        ArrayList<ArrayList<Integer>> prueba = new ArrayList<>();
+
+        for (int i=0 ; i<matriz.size(); i++){
+            prueba.add(i, matriz.get(i));
+        }
+
+        return prueba;
     }
     
 }

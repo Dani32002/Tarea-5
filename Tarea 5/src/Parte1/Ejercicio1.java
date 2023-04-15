@@ -15,6 +15,7 @@ public class Ejercicio1 {
         ArrayList<ArrayList<Integer>> arb_rec = calculadora.ejesArbol(matriz);
 		long finalTiempo = System.currentTimeMillis();
 
+        System.out.println(arb_rec);
 
     }
 }
