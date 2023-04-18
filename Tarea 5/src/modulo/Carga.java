@@ -1,14 +1,20 @@
 package modulo;
 
 import java.io.BufferedReader;
+import java.io.*;
+import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 
 public class Carga {
 	
 	public ArrayList<ArrayList<Integer>> cargarMatriz(String nomArchivo) throws NumberFormatException, IOException {
-		BufferedReader lector = new BufferedReader(new FileReader("./docs/" + nomArchivo));
+		
+		File f = new File("./docs/" + nomArchivo);
+		FileInputStream stream = new FileInputStream(f);
+		BufferedReader lector = new BufferedReader(new InputStreamReader(stream, "UTF-16"));
 		String linea;
 		ArrayList<ArrayList<Integer>> matriz = new ArrayList<>();
 		while ((linea = lector.readLine()) != null) {
