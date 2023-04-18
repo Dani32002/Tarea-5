@@ -4,6 +4,8 @@ Samuel Goncalves – 202122595
 Santiago Celis – 202111131 
 
 Instrucciones:
+Para instalar, descomprima el proyecto y abralo para ejecutarlo desde el modulo parte 1 o parte 2 donde encontrara
+los archivos que debe ejecutar como se indica más adelante en este documento.
 
 Todos los archivos prueba son grafos representados como matriz de adyacencia
 
@@ -17,7 +19,7 @@ el Ejercicio1 y como argumentos el nombre del algoritmo y el nombre del archivo 
 El retorno de ambas funciones es una lista con los ejes representados por un pareja [vertice,vertice] que 
 pertenecen al mínimo árbol de recubrimiento.
 
-Para ejecutar el algoritmo de flujo máximo Ford se tiene que ejecutar Ejercicio2 y como argumentos de entrada el 
+Para ejecutar el algoritmo de flujo máximo Ford-Fulkerson se tiene que ejecutar Ejercicio2 y como argumentos de entrada el 
 nombre del archivo, la fuente y el sumidero, ambos como integer, ej: "prueba1.txt 0 5".
 El retorno es un int que representa el flujo máximo de ese grafo con la fuente y sumidero indicados por parámetro.  
 
