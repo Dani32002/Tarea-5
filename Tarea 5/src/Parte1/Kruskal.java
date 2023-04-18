@@ -11,7 +11,6 @@ public class Kruskal implements ArbolRecubrimiento{
     	//Declaración de estructuras
     	ArrayList<ArrayList<Integer>> conjuntoArcos = new ArrayList<>();
     	ArrayList<ArrayList<Integer>> mst = new ArrayList<>();
-        Particion particion = new Particion(matriz.size());
         //Conjunto de arcos del grafo
         for (int i = 0; i < matriz.size(); i++) {
             for (int j = 1 + i; j < matriz.size(); j++) {
@@ -20,13 +19,13 @@ public class Kruskal implements ArbolRecubrimiento{
                 	arco.add(i);
                 	arco.add(j);
                 	arco.add(matriz.get(i).get(j));
-                	System.out.println(matriz.get(i).get(j));
                 	conjuntoArcos.add(arco);
                 }
             }
         }
         //Ordenar arcos segun su peso
         Collections.sort(conjuntoArcos, (a, b) -> a.get(2) - b.get(2));
+        Particion particion = new Particion(matriz.size());
         //Proceso de Kruskal
         for (ArrayList<Integer> arco : conjuntoArcos) {
             int u = arco.get(0);
@@ -41,5 +40,4 @@ public class Kruskal implements ArbolRecubrimiento{
         }
         return mst;
     }
-    
 }

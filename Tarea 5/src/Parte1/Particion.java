@@ -8,6 +8,7 @@ public class Particion {
 	public Particion(int n){
 		//Complejidad de O(n)
 		subsets = new int[n];
+		this.n = n;
 		for(int i = 0; i < n; i++){
 			subsets[i] = i;
 		}
@@ -31,7 +32,7 @@ public class Particion {
 		//Complejidad de O(n)
 		int s1 = find(v1);
 		int s2 = find(v2);
-		for(int i=0; i < n; i++){
+		for(int i=0; i < this.n; i++){
             if(subsets[i] == s1){
                 subsets[i] = s2;
             }
