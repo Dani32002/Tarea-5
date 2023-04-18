@@ -18,6 +18,6 @@ public class Ejercicio1 {
 		long finalTiempo = System.currentTimeMillis();
 
         System.out.println(arb_rec);
-
+        System.out.println("Tiempo Total (milisegundos): "+(finalTiempo-inicioTiempo));
     }
 }
