@@ -14,7 +14,7 @@ public class Carga {
 		
 		File f = new File("./docs/" + nomArchivo);
 		FileInputStream stream = new FileInputStream(f);
-		BufferedReader lector = new BufferedReader(new InputStreamReader(stream, "UTF-16"));
+		BufferedReader lector = new BufferedReader(new InputStreamReader(stream, "UTF-8"));
 		String linea;
 		ArrayList<ArrayList<Integer>> matriz = new ArrayList<>();
 		while ((linea = lector.readLine()) != null) {
